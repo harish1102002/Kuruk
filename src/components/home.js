@@ -5,7 +5,7 @@ function Home(props)
 {
     const [post,setp]=useState([])
     const d = new Date()
-    let x=0
+    const [x,setx]=useState(0)
     let temp
 
     function scr(){document.getElementById("chats").scrollTop=document.getElementById("chats").scrollHeight;}
@@ -18,7 +18,7 @@ function Home(props)
                 if(temp.length>x)
                 {
                     console.log(temp.length,x)
-                    x=temp.length
+                    setx(temp.length)
                     setp(temp)
                 }
             })

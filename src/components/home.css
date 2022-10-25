@@ -47,7 +47,7 @@ body{
 .chatbox{
     display: flex;
     justify-content: center;
-    height: 10vh;
+    height: 15vh;
 }
 .typing{
     width: 50vw;

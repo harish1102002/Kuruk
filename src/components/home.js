@@ -25,6 +25,7 @@ function Home(props)
             })}
             
     useEffect(()=>{
+        console.log("hello")
     return(()=>setInterval(()=>{fet()
     },1000))
     },[])

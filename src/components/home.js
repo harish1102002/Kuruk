@@ -24,10 +24,8 @@ function Home(props)
                 }
             })}
             
-    useEffect(()=>{
-        setInterval(()=>{fet()
+    setInterval(()=>{fet()
     },1000)
-    },[])
 
     useEffect(()=>{
     scr()

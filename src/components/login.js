@@ -74,7 +74,7 @@ function Login() {
             {d==1?<Home Id={userid}/>:
             <div className="login">
                 <h1 className="head">Login</h1>
-                <input className="user" id="user" autoComplete="off" spellCheck="false"
+                <input className="user" id="user" spellCheck="false"
                     onFocus={(e) => {
                         e.target.placeholder = ''; document.getElementsByClassName("userincorrect")[0].style.display = "none";
                         document.getElementsByClassName("password")[0].style.marginTop = "4vh";

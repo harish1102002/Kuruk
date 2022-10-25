@@ -25,7 +25,7 @@ function Home(props)
     useEffect(()=>{
     return(()=>setInterval(()=>{fet()
     },1000))
-    })
+    },[])
 
     useEffect(()=>{
     scr()

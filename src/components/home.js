@@ -18,13 +18,16 @@ function Home(props)
                 temp=j
                 if(temp.length>x)
                 {
+                    console.log("setp")
                     x=temp.length
                     setp(temp)
                 }
             })}
             
-    setInterval(()=>{fet()
+    useEffect(()=>{
+        setInterval(()=>{fet()
     },1000)
+    },[])
 
     useEffect(()=>{
     scr()

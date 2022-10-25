@@ -15,9 +15,9 @@ function Home(props)
                 (res) => res.json()
             ).then((j)=>{
                 temp=j
-                if(temp.length>x)
+                if(temp.length>x.current)
                 {
-                    console.log(x)
+                    console.log(x.current)
                     setp(temp)
                 }
             })}

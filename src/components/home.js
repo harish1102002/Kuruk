@@ -25,9 +25,8 @@ function Home(props)
             })}
             
     useEffect(()=>{
-        fet()
-        return(()=>setInterval(()=>{fet()
-    },1000))
+        setInterval(()=>{fet()
+    },1000)
     },[])
 
     useEffect(()=>{

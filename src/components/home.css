@@ -10,13 +10,11 @@ body{
 }
 .chats{
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     overflow-y: scroll;
     background-color: transparent;
 }
-.chats:last-child{
-    margin-bottom: 8vh;
-}
+
 .kuruk{
     color: whitesmoke;
     font-size: 25px;
@@ -24,6 +22,7 @@ body{
 .nav{
     background-color: #263238;
     display: flex;
+    min-height: 70px;
     align-items: center;
     justify-content: center;
     height: 10vh;
@@ -50,6 +49,7 @@ body{
 .typing{
     width: 50vw;
     height: 8vh;
+    min-height: 50px;
     font-size: medium;
     border: none;
     color: white;
@@ -69,6 +69,8 @@ body{
 .send{
     height: 8vh;
     width: 8vh;
+    min-width: 50px;
+    min-height: 50px;
     border-radius: 50%;
     border: none;
     font-size: 18px;

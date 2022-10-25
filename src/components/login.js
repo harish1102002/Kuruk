@@ -4,7 +4,7 @@ import {useState} from "react";
 
 function Login() {
     
-    const post=["h","Harish","Thangam","Harini","Dhanush","Sush","Techpak","Javid","Crimson","Kuttichathan","Dash","Sankar"]
+    const post=["Harish","Thangam","Harini","Dhanush","Sush","Techpak","Javid","Crimson","Kuttichathan","Dash","Sankar"]
     const passes=["harish#1","thangam&27","harini@7","dhanush$9","sushanthi^1","deepak%1","akash*16","reshma+14","deeyes!3","sankar=22"]
     const [d,setd]=useState(0);
     const [userid,setud]=useState("");

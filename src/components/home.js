@@ -26,16 +26,14 @@ function Home(props)
             
     useEffect(()=>{
         console.log("hello")
-    return(()=>setInterval(()=>{fet()
-    },1000))
+        setInterval(()=>{fet()
+    },1000)
     },[])
 
     useEffect(()=>{
     scr()
     },[post])
 
-    fet()
-    
     const sub=(e)=>{
         if(document.getElementById("typing").value.trim() == "")
         return

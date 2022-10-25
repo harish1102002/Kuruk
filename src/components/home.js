@@ -16,7 +16,6 @@ function Home(props)
                 (res) => res.json()
             ).then((j)=>{
                 temp=j
-                console.log(j)
                 if(temp.length>x)
                 {
                     x=temp.length
@@ -25,9 +24,9 @@ function Home(props)
             })}
             
     useEffect(()=>{
-        console.log("hello")
-        setInterval(()=>{fet()
-    },1000)
+        fet()
+        return(()=>setInterval(()=>{fet()
+    },1000))
     },[])
 
     useEffect(()=>{

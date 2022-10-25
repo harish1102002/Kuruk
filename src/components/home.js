@@ -24,7 +24,7 @@ function Home(props)
     scr()},[post])
 
     setInterval(()=>{fet()
-    },1000)
+    },600)
 
     const sub=(e)=>{
         if(document.getElementById("typing").value.trim() == "")

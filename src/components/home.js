@@ -11,10 +11,11 @@ function Home(props)
     function scr(){document.getElementById("chats").scrollTop=document.getElementById("chats").scrollHeight;}
 
     function fet(){
-        fetch("https://tranquil-wave-46545.herokuapp.com/").then(
+        fetch("https://tranquil-wave-46545.herokuapp.com").then(
                 (res) => res.json()
             ).then((j)=>{
                 temp=j
+                console.log(j)
                 if(temp.length>x)
                 {
                     x=temp.length

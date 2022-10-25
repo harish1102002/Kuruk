@@ -17,13 +17,11 @@ function Home(props)
             ).then((j)=>{
                 temp=j
                 if(temp.length>x.current)
-                {
-                    console.log(x.current)
-                    setp(temp)
-                }
+                setp(temp)
             })}
           
-    useEffect(()=>{x.current=post.length},[post])
+    useEffect(()=>{x.current=post.length
+    scr()},[post])
 
     setInterval(()=>{fet()
     },1000)

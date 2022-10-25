@@ -6,6 +6,7 @@ function Home(props)
     const [post,setp]=useState([])
     const d = new Date()
     const x=useRef(null)
+    x.current=0
     let temp
 
     function scr(){document.getElementById("chats").scrollTop=document.getElementById("chats").scrollHeight;}
@@ -23,6 +24,7 @@ function Home(props)
             })}
           
     useEffect(()=>{x.current=post.length},[post])
+
     setInterval(()=>{fet()
     },1000)
 

@@ -16,7 +16,7 @@ function Home(props)
                 temp=j
                 if(temp.length>post.length)
                 {
-                    console.log(post.length)
+                    console.log(post.length,post)
                     setp(temp)
                 }
             })}

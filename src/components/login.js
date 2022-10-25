@@ -82,14 +82,14 @@ function Login() {
                     onBlur={(e) => { e.target.placeholder = 'user' }}
                     placeholder='user' />
                 <p className="userincorrect" >Please fill valid info</p>
-                <input className="password" id="pass" autoComplete="off" spellCheck="false"
+                <input className="password" id="pass" spellCheck="false"
                     onFocus={(e) => {
                         e.target.placeholder = ''; document.getElementsByClassName("passwordincorrect")[0].style.display = "none";
                         document.getElementsByClassName("retype")[0].style.marginTop = "4vh";
                     }}
                     onBlur={(e) => { e.target.placeholder = 'password' }} placeholder='password' />
                 <p className="passwordincorrect" >Please fill valid info</p>
-                <input className="retype" id="retype" autoComplete="off" spellCheck="false"
+                <input className="retype" id="retype" spellCheck="false"
                     onFocus={(e) => {
                         e.target.placeholder = ''; document.getElementsByClassName("retypeincorrect")[0].style.display = "none";
                         document.getElementsByClassName("newacc")[0].style.marginTop = "4vh";

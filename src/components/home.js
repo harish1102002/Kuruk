@@ -33,6 +33,8 @@ function Home(props)
     useEffect(()=>{
     scr()
     },[post])
+
+    fet()
     
     const sub=(e)=>{
         if(document.getElementById("typing").value.trim() == "")

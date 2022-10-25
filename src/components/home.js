@@ -15,7 +15,7 @@ function Home(props)
                 (res) => res.json()
             ).then((j)=>{
                 temp=j
-                if(temp.length>x)
+                if(JSON.stringify(j)!=JSON.stringify(post))
                 {
                     console.log(temp.length,x)
                     setp(temp)

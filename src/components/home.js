@@ -1,10 +1,11 @@
 import "./home.css";
-import {useEffect, useState} from "react";
+import {useEffect, useState,useRef} from "react";
 
 function Home(props)
 {
     const [post,setp]=useState([])
     const d = new Date()
+    const x=useRef(null)
     let temp
 
     function scr(){document.getElementById("chats").scrollTop=document.getElementById("chats").scrollHeight;}
@@ -14,13 +15,14 @@ function Home(props)
                 (res) => res.json()
             ).then((j)=>{
                 temp=j
-                if(temp.length>post.length)
+                if(temp.length>x)
                 {
-                    console.log(post)
+                    console.log(x)
                     setp(temp)
                 }
             })}
-            
+          
+    useEffect(()=>{x.current=post.length},[post])
     setInterval(()=>{fet()
     },1000)
 

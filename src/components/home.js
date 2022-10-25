@@ -9,22 +9,18 @@ function Home(props)
     let temp
 
     function scr(){document.getElementById("chats").scrollTop=document.getElementById("chats").scrollHeight;}
-
-    function fet(){
-        console.log("hi")
+            
+    setInterval(()=>{
         fetch("https://tranquil-wave-46545.herokuapp.com").then(
                 (res) => res.json()
             ).then((j)=>{
                 temp=j
                 if(temp.length>x)
                 {
-                    console.log("setp")
                     x=temp.length
                     setp(temp)
                 }
-            })}
-            
-    setInterval(()=>{fet()
+            })
     },1000)
 
     useEffect(()=>{

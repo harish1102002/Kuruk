@@ -18,8 +18,8 @@ function Home(props)
                 if(temp.length>x)
                 {
                     x=temp.length
+                    console.log(post)
                     setp(temp)
-                    scr()
                 }
             })}
             

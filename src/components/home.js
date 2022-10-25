@@ -5,8 +5,8 @@ function Home(props)
 {
     const [post,setp]=useState([])
     const d = new Date()
-    const [x,setx]=useState(0)
-    const [temp,sett]=useState([])
+    let x=0
+    let temp
 
     function scr(){document.getElementById("chats").scrollTop=document.getElementById("chats").scrollHeight;}
             
@@ -14,12 +14,12 @@ function Home(props)
         fetch("https://tranquil-wave-46545.herokuapp.com").then(
                 (res) => res.json()
             ).then((j)=>{
-                sett(j)
+                temp=j
                 if(temp.length>x)
                 {
                     console.log(temp.length,x)
-                    setx(temp.length)
                     setp(temp)
+                    x=post.length
                 }
             })
     },1000)

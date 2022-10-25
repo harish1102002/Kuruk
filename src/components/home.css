@@ -7,10 +7,12 @@ body{
 .home{
     width: 100%;
     background-color: #273f4b;
+    overflow: hidden;
+    height: 100vh;
 }
 .chats{
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     overflow-y: scroll;
     background-color: transparent;
 }
@@ -45,6 +47,8 @@ body{
 .chatbox{
     display: flex;
     justify-content: center;
+    height: 8vh;
+    margin-bottom: 2px;
 }
 .typing{
     width: 50vw;
@@ -83,5 +87,8 @@ body{
 @media only screen and (max-width:420px){
     .login{
         width: 95vw;
+    }
+    .chatbox{
+        justify-content: space-around;
     }
 }

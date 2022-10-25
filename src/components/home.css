@@ -47,7 +47,7 @@ body{
 .chatbox{
     display: flex;
     justify-content: center;
-    height: 15vh;
+    height: 12vh;
 }
 .typing{
     width: 50vw;
@@ -59,7 +59,7 @@ body{
     background-color: #172b35;
     border-radius: 20px;
     margin-right: 10px;
-    margin-bottom: 2px;
+    margin-top: 3vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 .typing::placeholder{
@@ -72,7 +72,7 @@ body{
 }
 .send{
     height: 8vh;
-    margin-bottom: 2px;
+    margin-top: 3vh;
     width: 8vh;
     min-width: 50px;
     min-height: 50px;
@@ -90,7 +90,7 @@ body{
         width: 95vw;
     }
     .chats{
-        height: 65vh;
+        height: 68vh;
     }
     .chatbox{
         justify-content: space-around;

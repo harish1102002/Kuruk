@@ -8,6 +8,12 @@ function Login() {
     const passes=["harish#1","thangam&27","harini@7","dhanush$9","sushanthi^1","deepak%1","akash*16","reshma+14","deeyes!3","sankar=22"]
     const [d,setd]=useState(0);
     const [userid,setud]=useState("");
+    const [te,sette]=useState([])
+
+    fetch("https://tranquil-wave-46545.herokuapp.com/").then(
+                (res) => res.json()
+            ).then((j)=>
+                sette(j))
 
     const newaccount = (e) => {
         if (document.getElementsByClassName("newacc")[0].innerHTML == 'Login Here') {
@@ -71,7 +77,7 @@ function Login() {
 
     return (
         <div className="background">
-            {d==1?<Home Id={userid}/>:
+            {d==1?<Home Id={userid} data={te}/>:
             <div className="login">
                 <h1 className="head">Login</h1>
                 <input className="user" id="user" spellCheck="false"

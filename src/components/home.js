@@ -3,28 +3,31 @@ import {useEffect, useState,useRef} from "react";
 
 function Home(props)
 {
-    const [post,setp]=useState([])
+    const [post,setp]=useState(props.data)
     const d = new Date()
     const x=useRef(null)
-    x.current=0
+    x.current=post
     let temp
 
     function scr(){document.getElementById("chats").scrollTop=document.getElementById("chats").scrollHeight;}
-
     function fet(){
-        fetch("https://tranquil-wave-46545.herokuapp.com").then(
+        console.log(x.current.length)
+        fetch("https://tranquil-wave-46545.herokuapp.com/").then(
                 (res) => res.json()
             ).then((j)=>{
                 temp=j
-                if(temp.length>x.current)
+                if(temp.length>x.current.length)
                 setp(temp)
             })}
-          
-    useEffect(()=>{x.current=post.length
+    
+    useEffect(()=>{x.current=post
     scr()},[post])
 
-    setInterval(()=>{fet()
+    useEffect(()=>{
+    const tid=setInterval(()=>{fet()
     },600)
+    return(()=>clearInterval(tid))
+    },[])
 
     const sub=(e)=>{
         if(document.getElementById("typing").value.trim() == "")

@@ -29,6 +29,9 @@ body{
     justify-content: center;
     height: 10vh;
 }
+.msg{
+    white-space: normal;
+}
 .date{
     margin-left: calc(100% - 90px);
     font-size: 14px;

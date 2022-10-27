@@ -47,7 +47,7 @@ function Home(props)
                     post.map((e)=>
                         <div className="chat">
                             <p>{e.id}</p>
-                            <p>{e.msg}</p>
+                            <p className="msg">{e.msg}</p>
                             <p className="date">{e.date}</p>
                         </div>
                     )

@@ -30,7 +30,7 @@ body{
     height: 10vh;
 }
 .msg{
-    white-space: normal;
+    overflow-wrap: break-word;
 }
 .date{
     margin-left: calc(100% - 90px);

@@ -35,7 +35,7 @@ function Home(props)
         fetch("https://tranquil-wave-46545.herokuapp.com/",{
             method : "post",
             headers : {"Content-Type":"application/json"},
-            body: JSON.stringify({id:props.Id,msg:document.getElementById("typing").value.trim(),date:d.getHours()+":"+((d.getMinutes()<10)?"0":"")+d.getMinutes()+"\t"+d.getDate()+"/"+d.getMonth()})}).then(e=>console.log("posted"))
+            body: JSON.stringify({id:props.Id,msg:document.getElementById("typing").value.trim(),date:d.getHours()+":"+((d.getMinutes()<10)?"0":"")+d.getMinutes()+"\t"+d.getDate()+"/"+(d.getMonth()+1)})}).then(e=>console.log("posted"))
             document.getElementById("typing").value="";
     }
     
